@@ -1,39 +1,68 @@
 <!DOCTYPE html>
-<html  lang="cs">
+<html lang="cs">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Gaming Hive Komunita</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tlačítko s animací</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: yellow;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: gold;
+        }
+
+        .loading-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 5px;
+            background-color: yellow;
+            transition: width 2s ease-in-out;
+            z-index: -1;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-	 <h1><strong>Gaming Hive Komunita </strong></h1>
-       <br><h2>Co u nás najdete?</h2>
-       <p>Najdeš tu dobrou komunitu lidí. Dobrý vedení. Hraní s našema Členama.</p>
 
-       <p><strong>✔spolehlivost na A Team ✔dobrá skupina lidí</strong></p>
-<br>
-<br>
-<h2><strong>Informace o komunitě</strong></h2>
-<h3>O serveru</h3>						
-<p>Tento server se zaměřuje na hraní her a komunitní diskuse. Hlavním cílem je vytvořit příjemné a zábavné prostředí pro všechny členy, kde se můžete podělit o své herní zážitky, diskutovat o novinkách, nebo se připojit k různým aktivitám, které pořádáme.Na serveru najdete různé kanály zaměřené na specifické hry, tipy, triky a komunitní diskuze. Dbáme na to, aby byla zachována příjemná a přátelská atmosféra, kde si každý může najít své místo a užít si společné chvíle s ostatními.</p>
+    <button id="nextButton">Další</button>
+    <div class="loading-bar" id="loadingBar"></div>
 
-<br>
-<h3>O A-Teamu</h3>
-<p>A-Team je skupina administrátorů a moderátorů, kteří se starají o správu serveru a zajišťují, aby zde byla příjemná atmosféra pro všechny. Pokud máte nějaké dotazy nebo potřebujete pomoc, obraťte se na nás. Radi pomužeme.</p>
-<br>
+    <script>
+        const button = document.getElementById('nextButton');
+        const loadingBar = document.getElementById('loadingBar');
 
+        button.onclick = function() {
+            // Zobrazíme loading bar a spustíme animaci
+            loadingBar.style.width = '100%';
 
-<h3>Jaké role jsou v A-Teamu</h3>
-<p><strong>Majitel <br>
-Manažer <br>
-Developer-Team <br>
-Admin-Team <br>
-Administrátor-Team <br>
-Moderátor-Team <br>  
-Support-Team <br> 
-Eventer-Team <br>  
-Grafický designér-Team <br></strong></p>
-<br>
-<br>
-<br>
-<h2><strong>Připoj se knám a buduj s nami dobrou komunitu</strong></h2>
+            // Po dokončení animace (2 sekundy) přesměrujeme na zacatek.html
+            setTimeout(function() {
+                window.location.href = 'zacatek.html';
+            }, 2000);
+        };
+    </script>
+
+</body>
+</html>
