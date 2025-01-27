@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
@@ -17,71 +17,91 @@
             background-color: #000000;
             color: white;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             height: 50px;
             z-index: 1000;
+            padding: 0 20px;
         }
-        .nav-bar div {
+        .logo img {
+            width: 40px; /* Zmenšeno logo /
+            height: 40px; / Zmenšeno logo /
+            object-fit: contain;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            width: 60%; / Odkazy zabírají větší část /
+        }
+        .nav-links div {
             text-align: center;
             padding: 10px;
             cursor: pointer;
         }
-        .nav-bar div:hover {
-            background-color: #000000;
+        .nav-links div:hover {
+            background-color: #444;
         }
         .content {
-            margin-top: 60px;
+            margin-top: 70px;
             padding: 20px;
         }
+
+        / Responzivní design pro mobilní zařízení /
+        @media (max-width: 768px) {
+            .nav-links {
+                width: 100%;
+                justify-content: space-between; / Udržení odkazu vedle sebe /
+                text-align: center;
+            }
+            .logo img {
+                width: 30px; / Zmenšení loga pro mobil /
+                height: 30px; / Zmenšení loga pro mobil */
+            }
+            .nav-bar {
+                padding: 0 10px;
+            }
+        
     </style>
-</head>
+</head> 
 <body>
     <div class="nav-bar">
-		<div><strong><a href="https://m.youtube.com/@Čmelák-q5" target="_blank">Youtube</a></strong></div>
-        <div><strong><a href="https://www.twitch.tv/cmelakytcze"target="_blank">Twitch</a></strong></div>
-        <div><strong><a href="https://discord.gg/fUA9b5zfCW"target="_blank">Discord pozvánka</a></strong></div>
-
+        <div class="logo">
+            <img src="New_Project_edit_416067989712952.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <div><strong><a href="https://m.youtube.com/@Čmelák-q5" target="_blank">Youtube</a></strong></div>
+            <div><strong><a href="https://www.twitch.tv/cmelakytcze" target="_blank">Twitch</a></strong></div>
+            <div><strong><a href="https://discord.gg/fUA9b5zfCW" target="_blank">Discord pozvánka</a></strong></div>
+        </div>
     </div>
-	<br>
-	<br>
-	<h1><strong>Gaming Hive Komunita </strong></h1>
-	<br><h2>Co u nás najdete?</h2>
-	<p>Najdeš tu dobrou komunitu lidí. Dobrý vedení. Hraní s našema Členama.</p>
 
-	<p><strong>✔spolehlivost na A Team ✔dobrá skupina lidí</strong></p>
-<br>
-<br>
-<h2><strong>Informace o komunitě</strong></h2>
-<h3>O serveru</h3>                      
-<p>Tento server se zaměřuje na hraní her a komunitní diskuse. Hlavním cílem je vytvořit příjemné a zábavné prostředí pro všechny členy, kde se můžete podělit o své herní zážitky, diskutovat o novinkách, nebo se připojit k různým aktivitám, které pořádáme.Na serveru najdete různé kanály zaměřené na specifické hry, tipy, triky a komunitní diskuze. Dbáme na to, aby byla zachována příjemná a přátelská atmosféra, kde si každý může najít své místo a užít si společné chvíle s ostatními.</p>
+    <div class="content">
+        <h1><strong>Gaming Hive Komunita</strong></h1>
+        <h2>Co u nás najdete?</h2>
+        <p>Najdeš tu dobrou komunitu lidí. Dobrý vedení. Hraní s našema Členama.</p>
 
-<br>
-<h3>O A-Teamu</h3>
-<p>A-Team je skupina administrátorů a moderátorů, kteří se starají o správu serveru a zajišťují, aby zde byla příjemná atmosféra pro všechny. Pokud máte nějaké dotazy nebo potřebujete pomoc, obraťte se na nás. Radi pomužeme.</p>
-<br>
+        <p><strong>✔spolehlivost na A Team ✔dobrá skupina lidí</strong></p>
 
-<h3>Jaké role jsou v A-Teamu</h3>
-<p><strong>Majitel <br>
-Manažer <br>
-Developer-Team <br>
-Admin-Team <br>
-Administrátor-Team <br>
-Moderátor-Team <br>  
-Support-Team <br> 
-Eventer-Team <br>  
-Grafický designér-Team <br></strong></p>
-<br>
-<br>
-<br>
-<h2><strong>Připoj se knám a buduj s nami dobrou komunitu</strong></h2>
+        <h2><strong>Informace o komunitě</strong></h2>
+        <h3>O serveru</h3>
+        <p>Tento server se zaměřuje na hraní her a komunitní diskuse. Hlavním cílem je vytvořit příjemné a zábavné prostředí pro všechny členy, kde se můžete podělit o své herní zážitky, diskutovat o novinkách, nebo se připojit k různým aktivitám, které pořádáme.Na serveru najdete různé kanály zaměřené na specifické hry, tipy, triky a komunitní diskuze. Dbáme na to, aby byla zachována příjemná a přátelská atmosféra, kde si každý může najít své místo a užít si společné chvíle s ostatními.</p>
+        <h3>O A-Teamu</h3>
+        <p>A-Team je skupina administrátorů a moderátorů, kteří se starají o správu serveru a zajišťují, aby zde byla příjemná atmosféra pro všechny. Pokud máte nějaké dotazy nebo potřebujete pomoc, obraťte se na nás. Radi pomužeme.</p>
+
+        <h3>Jaké role jsou v A-Teamu</h3>
+        <p><strong>Majitel <br>
+        Manažer <br>
+        Developer-Team <br>
+        Admin-Team <br>
+        Administrátor-Team <br>
+        Moderátor-Team <br>
+        Support-Team <br> 
+        Eventer-Team <br>
+        Grafický designér-Team <br></strong></p>
+
+        <h2><strong>Připoj se knám a buduj s nami dobrou komunitu</strong></h2>
+    </div>
 </body>
 </html>
 
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-a {
-  color: rgb(208, 255, 0);
-}
+
