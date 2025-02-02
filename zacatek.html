@@ -54,6 +54,21 @@
             margin-right: auto;
             text-align: center;
         }
+        .credits {
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+        .credits a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        .credits a:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 768px) {
             .nav-bar {
                 flex-direction: row;
@@ -83,7 +98,6 @@
             <a href="https://www.twitch.tv/cmelakytcze" target="_blank">Twitch</a>
             <a href="https://discord.gg/fUA9b5zfCW" target="_blank">Discord</a>
             <a href="nase_projekty.html">Naše Projekty</a>
-
         </div>
     </div>
     <div class="content">
@@ -99,11 +113,15 @@
         <h2>Připoj se k nám a buduj s námi skvělou komunitu!</h2>
     </div>
 
+    <!-- Malý text na konec stránky -->
+    <div class="credits">
+        <p>Na stránce pracovali: <a href="pracovali.html" target="_blank">Tým Gaming Hive</a></p>
+    </div>
+
     <script>
         window.addEventListener('contextmenu', function(event) {
             event.preventDefault();
         });
     </script>
-
 </body>
 </html>
