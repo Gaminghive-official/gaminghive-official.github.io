@@ -15,6 +15,7 @@
             color: white;
             text-align: center;
             font-family: Verdana, sans-serif;
+            flex-direction: column;
         }
 
         button {
@@ -25,6 +26,7 @@
             border-radius: 25px;
             cursor: pointer;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
 
         button:hover {
@@ -40,10 +42,38 @@
             background-color: yellow;
             transition: width 2s ease-in-out;
         }
+
+        .text {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: white;
+            overflow: hidden;
+            border-right: .15em solid #fff;
+            white-space: nowrap;
+            width: 0;
+            animation: typing 4s steps(40) 1s 1 normal both, blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
     </style>
 </head>
 <body>
     <div>
+        <div class="text">Gaming Hive</div>
         <button id="nextButton">Další</button>
         <div class="loading-bar" id="loadingBar"></div>
     </div>
@@ -58,6 +88,11 @@
                 window.location.href = 'zacatek.html';
             }, 2000);
         };
+        
+        window.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
     </script>
 </body>
 </html>
