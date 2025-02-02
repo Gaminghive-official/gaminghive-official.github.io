@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigační menu</title>
+    <title>Gaming Hive</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
         }
         .nav-bar {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #000000;
-            color: white;
+            background-color: #000;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             height: 50px;
-            z-index: 1000;
             padding: 0 20px;
+            z-index: 1000;
+        }
+        .logo {
+            margin-right: 20px;
         }
         .logo img {
             width: 40px; 
@@ -30,34 +34,41 @@
         }
         .nav-links {
             display: flex;
-            justify-content: space-around;
-            width: 60%;
+            gap: 20px;
         }
-        .nav-links div {
-            text-align: center;
+        .nav-links a {
+            color: white;
+            text-decoration: none;
             padding: 10px;
-            cursor: pointer;
+            font-weight: bold;
         }
-        .nav-links div:hover {
+        .nav-links a:hover {
             background-color: #444;
+            border-radius: 5px;
         }
         .content {
             margin-top: 70px;
             padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
         }
-
         @media (max-width: 768px) {
-            .nav-links {
-                width: 100%;
-                justify-content: space-between;
-                text-align: center;
+            .nav-bar {
+                flex-direction: row;
+                justify-content: flex-start;
+                height: auto;
+                padding: 10px;
             }
             .logo img {
                 width: 30px;
                 height: 30px;
             }
-            .nav-bar {
-                padding: 0 10px;
+            .nav-links {
+                flex-direction: row;
+                gap: 10px;
+                flex-wrap: wrap;
             }
         }
     </style>
@@ -68,41 +79,31 @@
             <img src="New_Project_edit_416067989712952.png" alt="Logo">
         </div>
         <div class="nav-links">
-            <div><strong><a href="https://m.youtube.com/@Čmelák-q5" target="_blank">Youtube</a></strong></div>
-            <div><strong><a href="https://www.twitch.tv/cmelakytcze" target="_blank">Twitch</a></strong></div>
-            <div><strong><a href="https://discord.gg/fUA9b5zfCW" target="_blank">Discord pozvánka</a></strong></div>
-        
-        
+            <a href="https://www.youtube.com/@%C4%8Cmel%C3%A1k-q5g?app=desktop" target="_blank">YouTube</a>
+            <a href="https://www.twitch.tv/cmelakytcze" target="_blank">Twitch</a>
+            <a href="https://discord.gg/fUA9b5zfCW" target="_blank">Discord</a>
+            <a href="nase_projekty.html">Naše Projekty</a>
+
         </div>
-       
     </div>
-
     <div class="content">
-        <h1><strong>Gaming Hive Komunita</strong></h1>
+        <h1>Gaming Hive Komunita</h1>
         <h2>Co u nás najdete?</h2>
-        <p>Najdeš tu dobrou komunitu lidí. Dobrý vedení. Hraní s našema Členama.</p>
-
-        <p><strong>✔spolehlivost na A Team ✔dobrá skupina lidí</strong></p>
-
-        <h2><strong>Informace o komunitě</strong></h2>
+        <p>Najdeš tu dobrou komunitu lidí, dobré vedení a hraní s našimi členy.</p>
+        <p><strong>✔ Spolehlivý A-Team ✔ Skvělá komunita lidí</strong></p>
+        <h2>Informace o komunitě</h2>
         <h3>O serveru</h3>
-        <p>Tento server se zaměřuje na hraní her a komunitní diskuse. Hlavním cílem je vytvořit příjemné a zábavné prostředí pro všechny členy, kde se můžete podělit o své herní zážitky, diskutovat o novinkách, nebo se připojit k různým aktivitám, které pořádáme.Na serveru najdete různé kanály zaměřené na specifické hry, tipy, triky a komunitní diskuze. Dbáme na to, aby byla zachována příjemná a přátelská atmosféra, kde si každý může najít své místo a užít si společné chvíle s ostatními.</p>
-        <h3>Jaké role jsou v A-Teamu</h3>
-        <p><strong>Majitel <br>
-        Manažer <br>
-        Developer-Team <br>
-        Admin-Team <br>
-        Administrátor-Team <br>
-        Moderátor-Team <br>
-        Support-Team <br> 
-        Eventer-Team <br>
-        Grafický designér-Team <br></strong></p>
-
-        <h2><strong>Připoj se knám a buduj s nami dobrou komunitu</strong></h2>
+        <p>Tento server se zaměřuje na hraní her a komunitní diskuse. Naším cílem je vytvořit příjemné prostředí pro všechny členy, kde si můžete užívat hry, sdílet tipy a diskutovat o novinkách.</p>
+        <h3>Naše Teamy</h3>
+        <p><strong>Managment Team, Development Team, Administrator Team, Moderator Team, Discord Staff Team, Design Team</strong></p>
+        <h2>Připoj se k nám a buduj s námi skvělou komunitu!</h2>
     </div>
 </body>
 </html>
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> e9bafab0d06af8949f6427b9f8133527fd588b51

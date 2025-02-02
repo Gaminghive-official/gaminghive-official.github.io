@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tlačítko s animací</title>
+    <title>Gaming Hive</title>
     <style>
         body {
             height: 100vh;
@@ -11,7 +11,10 @@
             justify-content: center;
             align-items: center;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #000;
+            color: white;
+            text-align: center;
+            font-family: Verdana, sans-serif;
         }
 
         button {
@@ -36,36 +39,29 @@
             height: 5px;
             background-color: yellow;
             transition: width 2s ease-in-out;
-            z-index: -1;
-        }
-
-        .hide {
-            display: none;
         }
     </style>
 </head>
 <body>
-
-    <button id="nextButton">Další</button>
-    <div class="loading-bar" id="loadingBar"></div>
-
+    <div>
+        <button id="nextButton">Další</button>
+        <div class="loading-bar" id="loadingBar"></div>
+    </div>
+    
     <script>
         const button = document.getElementById('nextButton');
         const loadingBar = document.getElementById('loadingBar');
 
         button.onclick = function() {
-            // Zobrazíme loading bar a spustíme animaci
             loadingBar.style.width = '100%';
-
-            // Po dokončení animace (2 sekundy) přesměrujeme na zacatek.html
             setTimeout(function() {
                 window.location.href = 'zacatek.html';
             }, 2000);
         };
     </script>
-
 </body>
 </html>
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html>
@@ -198,3 +194,5 @@ body {
 
 
 
+=======
+>>>>>>> e9bafab0d06af8949f6427b9f8133527fd588b51
