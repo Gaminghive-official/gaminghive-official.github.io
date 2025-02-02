@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tlačítko s animací</title>
+    <title>Gaming Hive</title>
     <style>
         body {
             height: 100vh;
@@ -11,7 +11,10 @@
             justify-content: center;
             align-items: center;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #000;
+            color: white;
+            text-align: center;
+            font-family: Verdana, sans-serif;
         }
 
         button {
@@ -36,119 +39,25 @@
             height: 5px;
             background-color: yellow;
             transition: width 2s ease-in-out;
-            z-index: -1;
-        }
-
-        .hide {
-            display: none;
         }
     </style>
 </head>
 <body>
-
-    <button id="nextButton">Další</button>
-    <div class="loading-bar" id="loadingBar"></div>
-
+    <div>
+        <button id="nextButton">Další</button>
+        <div class="loading-bar" id="loadingBar"></div>
+    </div>
+    
     <script>
         const button = document.getElementById('nextButton');
         const loadingBar = document.getElementById('loadingBar');
 
         button.onclick = function() {
-            // Zobrazíme loading bar a spustíme animaci
             loadingBar.style.width = '100%';
-
-            // Po dokončení animace (2 sekundy) přesměrujeme na zacatek.html
             setTimeout(function() {
                 window.location.href = 'zacatek.html';
             }, 2000);
         };
     </script>
-
 </body>
 </html>
-
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  background-color: rgb(0, 0, 0);
-}
-
-h1 {
-  color: white;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-</style>
-</head>
-<body>
-
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <style>
-    body {
-      background-color: lightblue;
-    }
-    
-    h1 {
-      color: rgb(151, 16, 16);
-      text-align: center;
-    }
-    
-    p {
-      font-family: verdana;
-      font-size: 20px;
-    }
-    </style>
-    </head>
-    <body>
-    <br>
-    <h1><strong>Tlačítko otevři</strong></h1>
-    
-    
-    
-    </body>
-    </html>
-
-
-
-    <!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  background-color: rgba(0, 0, 0, 0.829);
-}
-
-h1 {
-  color: rgb(151, 16, 16);
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-</style>
-</head>
-<body>
-
-
-  <!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  background-image: url(https://cdn.discordapp.com/attachments/1331357162945118349/1333538724817928212/New_Project_edit_416067989712952.png?ex=67994237&is=6797f0b7&hm=2b07f41b7ece01fa4652b0c99e443fc4872b2dd1e10b52024caeed28e72c67f7&);
-}
-</style>
-</body>
-</html>
-
-
