@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hive</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+        }
+
+        .card .text {
+            padding: 15px;
+        }
+
+        .card a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card" onclick="window.location.href='https://www.instagram.com/cmelak9/?igsh=MTRvbmxqMHI2ZTJhbg%3D%3D&utm_source=qr#'">
+            <img src="https://i.postimg.cc/BvVmMzY7/Sn-mek-obrazovky-2025-02-04-161031.png" alt="Obrázek 1">
+            <div class="text">
+                <h3>Instagram</h3>
+                <p>Popis karty 1.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='https://www.youtube.com/@%C4%8Cmel%C3%A1k-q5g?app=desktop'">
+            <img src="https://i.postimg.cc/0j8KmkYT/Sn-mek-obrazovky-2025-02-04-161744.png" alt="Obrázek 2">
+            <div class="text">
+                <h3>YouTube</h3>
+                <p>Popis karty 2.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='https://www.twitch.tv/cmelakytcze'">
+            <img src="https://i.postimg.cc/hvjPcfbt/Sn-mek-obrazovky-2025-02-04-162024.png" alt="Obrázek 3">
+            <div class="text">
+                <h3>Twitch</h3>
+                <p>Popis karty 3.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='https://discord.com/invite/fUA9b5zfCW'">
+            <img src="https://i.postimg.cc/CxVT4RBn/Discord-icon.jpg" alt="Obrázek 4">
+            <div class="text">
+                <h3>Discord server</h3>
+                <p>Popis karty 4.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
