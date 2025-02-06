@@ -95,7 +95,7 @@
                         Navíc jsme zahájili práci na novém projektu, který vám brzy představíme!</p>
                 </div>
                 <button onclick="otevritPopup(this)">Více</button>
-                <div class="datumCas">Vydáno: 04.02.2025 20:00</div>
+                <div class="datumCas">Vydáno: 6.2. 2025 ve 18:00</div>
             </div>
         </div>
     </div>
@@ -122,6 +122,10 @@
         function zavritPopup() {
             document.getElementById("overlay").style.display = "none";
         }
+
+        window.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
     </script>
 </body>
 </html>

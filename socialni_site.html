@@ -18,11 +18,14 @@
             align-items: center;
             min-height: 100vh;
             background-color: #f4f4f4;
+            padding: 10px;
         }
 
         .container {
             display: flex;
             gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .card {
@@ -35,6 +38,7 @@
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
+            margin: 10px;
         }
 
         .card:hover {
@@ -57,9 +61,20 @@
             text-decoration: none;
         }
 
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+                height: 350px;
+            }
+        }
     </style>
 
-<link rel="icon" type="png" href="https://i.postimg.cc/nh3T8dZq/Sn-mek-obrazovky-2025-02-02-111024.png">
+    <link rel="icon" type="png" href="https://i.postimg.cc/nh3T8dZq/Sn-mek-obrazovky-2025-02-02-111024.png">
 
 </head>
 <body>
@@ -98,5 +113,10 @@
         </div>
     </div>
 
+    <script>
+ window.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    </script>
 </body>
 </html>

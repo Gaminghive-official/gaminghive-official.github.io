@@ -36,7 +36,7 @@
 
         .cards {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             gap: 20px;
             flex-wrap: wrap;
         }
@@ -84,6 +84,23 @@
         .card a:hover {
             color: #333333;
         }
+
+        /* Mobilní verze */
+        @media (max-width: 768px) {
+            .cards {
+                justify-content: center;
+            }
+
+            .card {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            .category h2 {
+                font-size: 24px;
+            }
+        }
     </style>
 
 <link rel="icon" type="png" href="https://i.postimg.cc/nh3T8dZq/Sn-mek-obrazovky-2025-02-02-111024.png">
@@ -92,43 +109,24 @@
 <body>
     <div class="container">
         <div class="category">
-            <h2>Discord Boti</h2>
             <div class="cards">
                 <div class="card">
                     <h3>Gaming Hive</h3>
                     <p>Na tomto Discord botovi se stále pracuje.</p>
                     <a href="gaming_hive.html">Více informací</a>
                 </div>
-                <div class="card">
-                    <h3>Gaming Hive Tickets</h3>
-                    <p>Na tomto Discord botovi se stále pracuje.</p>
-                    <a href="gaming_hive_tickets.html">Více informací</a>
-                </div>
-                <div class="card">
-                    <h3>Gaming Hive Moderation</h3>
-                    <p>Na tomto Discord botovi se stále pracuje.</p>
-                    <a href="gaming_hive_moderation.html">Více informací</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="category">
-            <h2>Hry</h2>
-            <div class="cards">
                 <div class="card">
                     <h3>ČmelákYT (Minecraft server)</h3>
-                    <p>Minecraft server od teamu Gaming Hive je vytvořen pro hráče hry Minecraft. Pro podrobnější informace klikněte na tuto kartu.</p>
+                    <p>Tento projekt byl vytvořen jednou holkou z A-teamu a to je Elen naše Head Graphic Designérka,
+                       kterou společně s pár členy A-teamu napadlo vytvořit Minecraft server pro naší komunitu. </p>
                     <a href="minecraft_server.html">Více informací</a>
                 </div>
+
                 <div class="card">
                     <h3>Roblox hra</h3>
-                    <p>Tato hra je zatím v plánování a ještě se na ní nepracuje. Máme rozpracované jiné projekty, ale plánujeme ji po sestavení týmu.</p>
-                    <a href="#">Více informací</a>
-                </div>
-                <div class="card">
-                    <h3>Zatím není naplánováno</h3>
-                    <p>Tato hra by mohla do budoucna vzniknout, ale zatím není ani v plánování.</p>
-                    <a href="#">Více informací</a>
+                    <p>Tato hraje ve vývoji.</p>
+                    <a href="roblox_hra.html">Více informací</a>
                 </div>
             </div>
         </div>
@@ -139,6 +137,5 @@
             event.preventDefault();
         });
     </script>
-
 </body>
 </html>

@@ -3,72 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming Hive Bot</title>
+    <title>Gaming Hive</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #121212;
+            color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            flex-direction: column;
         }
 
         .container {
-            width: 80%;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 70%;
+            background: linear-gradient(135deg, #1e1e1e, #333);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            overflow: hidden;
         }
 
         .header {
-            text-align: center;
-            margin-bottom: 20px;
+            width: 100%;
         }
 
         .header h1 {
-            font-size: 32px;
-            color: #333;
+            font-size: 36px;
+            color: #00aaff;
+            margin-bottom: 20px;
         }
 
         .content {
-            display: flex;
-            flex-direction: column;
+            display: grid;
             gap: 20px;
         }
 
         .info {
-            background-color: #f9f9f9;
+            background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .info:hover {
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
         .info h2 {
             font-size: 24px;
-            color: #333;
-            margin-bottom: 10px;
+            color: #00aaff;
         }
 
         .info p {
             font-size: 16px;
-            color: #666;
+            color: #ddd;
             line-height: 1.6;
         }
 
-        .invite-link {
+        .server-ip, .server-version {
             font-weight: bold;
-            color: #00aaff;
-            font-size: 18px;
-            cursor: pointer;
+            color: #fff;
+            font-size: 20px;
         }
     </style>
-
-<link rel="icon" type="png" href="https://i.postimg.cc/nh3T8dZq/Sn-mek-obrazovky-2025-02-02-111024.png">
-
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/nh3T8dZq/Sn-mek-obrazovky-2025-02-02-111024.png">
 </head>
 <body>
     <div class="container">
@@ -78,13 +81,17 @@
         
         <div class="content">
             <div class="info">
+                <div class="icon">
+                </div>
                 <h2>Popis Bota</h2>
                 <p>Gaming Hive Bot je nástroj pro automatizaci různých funkcí na Discord serveru. Můžeš s ním spravovat kanály, moderovat chování uživatelů, přidávat různé mini-hry a další. Tento bot je určený pro všechny, kdo hledají zábavu a efektivitu na jejich serveru.</p>
             </div>
 
             <div class="info">
+                <div class="icon">
+                </div>
                 <h2>Funkce</h2>
-                <p>- Příkazy pro zábavu a interakce</p>
+                <p>- Ticket systém</p>
                 <p>- Statistiky a záznamy aktivit</p>
                 <p>- Personalizované reakce a upozornění</p>
             </div>
@@ -96,6 +103,5 @@
             event.preventDefault();
         });
     </script>
-
 </body>
 </html>

@@ -58,9 +58,8 @@
             text-align: center;
             font-size: 12px;
             color: #fff;
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
+            position: relative;
+            margin-top: 60px;
         }
         .credits a {
             color: #ffcc00;
@@ -69,6 +68,8 @@
         .credits a:hover {
             text-decoration: underline;
         }
+
+        /* Mobilní úpravy */
         @media (max-width: 768px) {
             .nav-bar {
                 flex-direction: row;
@@ -85,11 +86,14 @@
                 gap: 10px;
                 flex-wrap: wrap;
             }
+            .credits {
+                margin-top: 30px;
+                bottom: 20px;
+            }
         }
     </style>
 
-<link rel="icon" type="png" href="https://i.postimg.cc/nh3T8dZq/Sn-mek-obrazovky-2025-02-02-111024.png">
-
+    <link rel="icon" type="png" href="https://i.postimg.cc/nh3T8dZq/Sn-mek-obrazovky-2025-02-02-111024.png">
 </head> 
 <body>
     <div class="nav-bar">
@@ -115,9 +119,8 @@
         <h2>Připoj se k nám a buduj s námi skvělou komunitu!</h2>
     </div>
 
-
     <div class="credits">
-        <p>Na stránce pracovali: <a href="pracovali.html" target="_blank">Tým Gaming Hive</a></p>
+        <a href="vytvorili.html" onclick="loadContent('vytvorili.html')">Vytvořili</a>
     </div>
 
     <script>
@@ -137,6 +140,10 @@
                     document.getElementById('main-content').innerHTML = '<p>Chyba při načítání obsahu.</p>';
                 });
         }
+
+        window.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
     </script>
 </body>
 </html>
